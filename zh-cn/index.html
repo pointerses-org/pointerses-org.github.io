@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PointerSes ORG — 开源系统级编程语言</title>
+  <meta name="description" content="PointerSes 是一个开源、免费、强大的编程语言，Groovy-DSL 风格，基于 Rust 与 Zig 实现。">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">*</span>
+        <span class="logo-text">PointerSes <span class="logo-org">ORG</span></span>
+      </div>
+      <nav class="site-nav">
+        <a href="#about">关于</a>
+        <a href="#features">特性</a>
+        <a href="#community">社区</a>
+        <a href="https://github.com/pointerses-org" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="fade-up">PointerSes</h1>
+        <p class="hero-subtitle fade-up delay-1">开源 · 免费 · 强大</p>
+        <p class="hero-desc fade-up delay-2">
+          PointerSes 是一个系统级编程语言，语言风格与 Groovy-DSL 相近。<br>
+          基于 Rust 与 Zig 实现，支持原生打包二进制文件，依赖管理只需一个 URL。
+        </p>
+        <div class="hero-actions fade-up delay-3">
+          <a class="btn btn-primary" href="https://github.com/pointerses-org/PointerSes-Script" target="_blank" rel="noopener">查看源码</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">关于 PointerSes</h2>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <h3>Groovy-DSL 风格</h3>
+            <p>如果你熟悉 Gradle (Groovy-DSL) 项目开发，可以快速转型投入 PointerSes 项目开发，学习曲线平缓。</p>
+          </div>
+          <div class="about-card reveal delay-1">
+            <h3>Rust + Zig 双内核</h3>
+            <p>基于 Rust 与 Zig 构建，兼顾安全性与跨架构能力，强大且轻量。</p>
+          </div>
+          <div class="about-card reveal delay-2">
+            <h3>Daemon 快速拉起</h3>
+            <p>支持通过 Daemon 进程快速拉起 PointerSes 实例，极大降低启动开销。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">核心特性</h2>
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">⚙️</div>
+            <h3>强大的工具链</h3>
+            <p>语言原生支持打包二进制文件（exe 及 Unix 软件），无需额外配置即可产出可执行文件。</p>
+          </div>
+          <div class="feature-card reveal delay-1">
+            <div class="feature-icon">📦</div>
+            <h3>YAML 项目配置</h3>
+            <p>通过 YAML 格式轻松配置项目，简洁直观，告别繁琐的配置文件。</p>
+          </div>
+          <div class="feature-card reveal delay-2">
+            <div class="feature-icon">🌐</div>
+            <h3>URL 直接导入依赖</h3>
+            <p>无需坐标，直接写一个 <code>https://</code> 地址即可导入库，跨平台通用，简单直接。</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">🧵</div>
+            <h3>自动化与手动并存</h3>
+            <p>直接通过一行代码切换自动化线程管理与手动化管理。上限高，下限低，灵活掌控并发。</p>
+          </div>
+          <div class="feature-card reveal delay-1">
+            <div class="feature-icon">🖥️</div>
+            <h3>跨架构编译</h3>
+            <p>搭配 Zig 实现跨架构支持，一次编写，多平台编译。</p>
+          </div>
+          <div class="feature-card reveal delay-2">
+            <div class="feature-icon">🔓</div>
+            <h3>MIT 开源</h3>
+            <p>完全免费，MIT 许可证授权。你可以自由使用、修改和分发。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">社区与贡献</h2>
+        <p class="section-desc">PointerSes 是一个开源项目，欢迎任何形式的贡献。</p>
+        <div class="community-links">
+          <a class="btn btn-primary" href="https://github.com/pointerses-org" target="_blank" rel="noopener">GitHub 组织</a>
+          <a class="btn btn-secondary" href="https://github.com/pointerses-org/PointerSes-Script/issues" target="_blank" rel="noopener">提交 Issue</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 PointerSes ORG · MIT License</p>
+      <p class="footer-meta">Powered by Rust &amp; Zig</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

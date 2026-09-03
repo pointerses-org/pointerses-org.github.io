@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PointerSes ORG</title>
+  <script>
+    (async function() {
+      let target = '/en-uk/index.html';
+      try {
+        const response = await fetch('https://ip-api.com/json/?fields=status,countryCode');
+        const data = await response.json();
+        if (data.status === 'success') {
+          const cc = data.countryCode;
+          if (cc === 'CN') {
+            target = '/zh-cn/index.html';
+          } else if (cc === 'TW' || cc === 'HK' || cc === 'MO') {
+            target = '/zh-hk/index.html';
+          } else {
+            target = '/en-uk/index.html';
+          }
+        }
+      } catch (e) {
+        target = '/en-uk/index.html';
+      }
+      window.location.href = target;
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
